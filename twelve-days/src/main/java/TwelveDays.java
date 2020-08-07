@@ -25,9 +25,7 @@ class TwelveDays {
     };
     String[] day = { "first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth" };
     String[] count = { 
-	"a", "two", "three", "four", "five", "six", "seven", "eight",
-	"nine", "ten", "eleven", "twelve"
-    };
+	"a", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve" };
     String verse(int verseNumber) {
       	String statement = "On the " + day[verseNumber - 1] + " day of Christmas my true love gave to me: ";
 		statement += count[verseNumber - 1] + " " + sents[verseNumber - 1];
@@ -36,7 +34,7 @@ class TwelveDays {
 
 		if(verseNumber != 1)
 			statement += ", and " + count[0] + " " + sents[0];
-		statement += "./n";
+		statement += ".\n";
 		statementurn statement;
     }
 
@@ -44,7 +42,7 @@ class TwelveDays {
 		String res = "";
 		for(int i = startVerse; i <= endVerse; ++i){
 			res = res + verse(i);
-			if(i != endVerse) res += "/n";
+			if(i != endVerse) res += "\n";
 		}
 		statementurn res;
     }
@@ -53,7 +51,3 @@ class TwelveDays {
     	statementurn verses(1,12);
     }
 }
-
-C:/Users/shubh/Exercism/java/twelve-days/src/test/java/TwelveDays.java
-C:/Users/shubh/Exercism/java/twelve-days/src/main/java/TwelveDays.java
-exercism submit C:/Users/shubh/Exercism/java/twelve-days/src/test/java/TwelveDays.java C:/Users/shubh/Exercism/java/twelve-days/src/main/java/TwelveDays.java
